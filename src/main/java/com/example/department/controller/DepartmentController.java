@@ -29,7 +29,7 @@ public class DepartmentController {
         return departmentService.findDepartmentById(id);
 
     }
-    @GetMapping("/getall")
+    @GetMapping("/get")
     public List<Department> getAllDepartment(){
         log.info("inside findDepartmentById method in departmentController");
         return departmentRepository.findAll();
